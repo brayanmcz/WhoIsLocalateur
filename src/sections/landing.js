@@ -1,80 +1,81 @@
-import React, { Component } from 'react';
-import { Iphone } from '../shared/iphone';
-import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import { Iphone } from "../shared/iphone";
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
 
-  .background{
+  .background {
     position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
-    margin-top: -20vh;
-    background-image: linear-gradient(10deg, #f4c44a, #f44336, #f44336, #f44336);
-    transform:skewY(-5deg);
+    width: 200vw;
+    margin-top: -40vh;
+    background-image: linear-gradient(
+      10deg,
+      #f4c44a,
+      #f44336,
+      #f44336,
+      #f44336
+    );
+    transform: skewY(-5deg);
     /* z-index: -9; */
   }
 
   @media only screen and (max-width: 767px) {
-    .background{
-    margin-top: -10vh;
-  }
+    .background {
+      margin-top: -10vh;
+    }
   }
 
-  .foreground{
+  @media only screen and (max-width: 767px) {
+    .demo {
+      transform: scale(0.5) !important;
+    }
+  }
+
+  .foreground {
     padding-top: 60px;
   }
 
-  .lobster{
-    font-family: "Lobster Two", cursive;
+  .demo-container {
+    text-align: center;
+  }
+
+  .demo {
+    display: inline-block;
+    transform: scale(0.8);
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
   }
 
   .center {
     text-align: center;
   }
-
-  .title{
-    font-size: calc(3vw + 40px);
-  }
-
-  .subtitle{
-    margin-top: -10px;
-    font-size: calc(0.5vw + 10px);
-  }
-
-  .description-container{
-    max-width: 400px;
-    text-align: center;
-    margin: auto;
-  }
 `;
 
 class LandingSection extends Component {
-  render(){
-    return(
+  render() {
+    return (
       <Wrapper>
         <div className="background" />
         <MDBContainer className="foreground" fluid>
           <MDBRow>
-            <MDBCol md="6" className="center">
-              <span className="title lobster text-white">Localateur</span>
-              <p className="subtitle text-white">New Customers Discovering You</p>
-              <div className="description-container">
-                <p className="description text-white">
-                  Increase your discoverability, target market, 
-                  and quality of customer relations. We are
-                  building a platform promoting experience
-                  sharing between you and your customers
-                  for a more personalized and enjoyable experience.
-                </p>
-              </div>
+            <MDBCol md="6" className="text-container">
+              <MDBRow>
+                <MDBCol size="12" className="center">
+                  Localateur
+                </MDBCol>
+              </MDBRow>
             </MDBCol>
-            <MDBCol md="6" className="center">
-              <Iphone className="phone"/>
+            <MDBCol md="6" className="demo-container">
+              <div className="demo">
+                <Iphone />
+              </div>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
