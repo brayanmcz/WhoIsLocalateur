@@ -15,6 +15,8 @@ function App() {
       <LandingSection />
       <FeatureCardLeft />
       <FeatureCardRight />
+      <FeatureCardLeft />
+      <FeatureCardRight />
     </Wrapper>
   );
 }
