@@ -7,7 +7,7 @@ import {
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    height: 150px;
+    // height: 150px;
     margin-bottom: 50px;
     margin-left: 15px;
     margin-right: 15px;
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     .image {
         // border: 1px solid black;
         border-radius: 5px;
-        // width: 90%;
+        width: 90%;
         height: 100%;
         box-shadow: 2px 5px 7px 3px lightgrey;
     }
@@ -43,10 +43,10 @@ export class FeatureCardLeft extends Component {
             <Wrapper>
                 <MDBContainer>
                     <MDBRow>
-                        <MDBCol size="3" className="image-container-left">
+                        <MDBCol size="12" sm="3" className="image-container-left">
                             <img className="image" src="https://cdn-image.foodandwine.com/sites/default/files/1501607996/opentable-scenic-restaurants-marine-room-FT-BLOG0818.jpg" />
                         </MDBCol>
-                        <MDBCol size="9">
+                        <MDBCol size="12" sm="9">
                             <MDBRow className="title">
                                 TELL YOUR STORY
                             </MDBRow>
@@ -67,7 +67,7 @@ export class FeatureCardRight extends Component {
             <Wrapper>
                 <MDBContainer>
                     <MDBRow>
-                        <MDBCol size="9">
+                        <MDBCol size="12" sm="9">
                             <MDBRow className="title">
                                 TELL YOUR STORY
                             </MDBRow>
@@ -75,7 +75,7 @@ export class FeatureCardRight extends Component {
                                 Share your origins and journeys with the world, and teach customers about your culture!
                             </MDBRow>
                         </MDBCol>
-                        <MDBCol size="3" className="image-container-right">
+                        <MDBCol size="12" sm="3" className="image-container-right">
                             <img className="image" src="https://cdn-image.foodandwine.com/sites/default/files/1501607996/opentable-scenic-restaurants-marine-room-FT-BLOG0818.jpg" />
                         </MDBCol>
                     </MDBRow>
