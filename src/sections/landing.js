@@ -4,15 +4,12 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-
   .background {
     position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 200vw;
+    width: 100vw;
     margin-top: -40vh;
     background-image: linear-gradient(
       10deg,
