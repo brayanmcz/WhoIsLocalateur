@@ -4,6 +4,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  min-height: 100vh;
   .background {
     position: absolute;
     top: 0;
@@ -20,11 +21,15 @@ const Wrapper = styled.div`
     .background {
       margin-top: -10vh;
     }
-  }
 
-  @media only screen and (max-width: 767px) {
     .demo {
       transform: scale(0.6) !important;
+    }
+  }
+
+  @media only screen and (min-width: 767px) {
+    .text-container {
+      margin-top: 100px;
     }
   }
 
@@ -90,7 +95,10 @@ class LandingSection extends Component {
                 </MDBCol>
               </MDBRow>
               <MDBRow>
-                <MDBCol size="12" className="center text-white mt-2">
+                <MDBCol
+                  size="12"
+                  className="center text-white mt-2 description"
+                >
                   A New, Simple, and Effective way to Maximize your customer
                   outreach.
                 </MDBCol>
@@ -112,6 +120,7 @@ class LandingSection extends Component {
               </div>
             </MDBCol>
           </MDBRow>
+          <MDBRow />
         </MDBContainer>
       </Wrapper>
     );
