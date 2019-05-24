@@ -7,7 +7,6 @@ import {
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    // height: 300px;
     margin-top: 25px;
     margin-bottom: 100px;
     margin-left: 15px;
@@ -29,23 +28,25 @@ const Wrapper = styled.div`
         box-shadow: 2px 5px 7px 3px lightgrey;
     }
 
+    .text-div {
+        float: bottom;
+    }
+
     .title {
         font-size: 28px !important;
         font-weight: 800 !important;
         color: #686868 !important;
-        font-family: Impact !important;
         margin-top: 15% !important;
     }
 
     .text {
-        font-family: Franklin Gothic Medium;
         font-size: 18px;
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
         max-width: 500px;
         text-align: center;
-        font-weight: 600;
+        font-weight: 400;
         color: #9e9c9c;
     }
 
@@ -63,7 +64,7 @@ export class FeatureCardLeft extends Component {
                         <MDBCol size="12" sm="4" className="image-container">
                             <img className="image" src="https://cdn-image.foodandwine.com/sites/default/files/1501607996/opentable-scenic-restaurants-marine-room-FT-BLOG0818.jpg" />
                         </MDBCol>
-                        <MDBCol size="12" sm="8">
+                        <MDBCol size="12" sm="8" className="text-div">
                             <MDBRow className="title text">
                                 <MDBCol>
                                     TELL YOUR STORY
@@ -90,7 +91,10 @@ export class FeatureCardRight extends Component {
             <Wrapper>
                 <MDBContainer>
                     <MDBRow>
-                    <MDBCol size="12" sm="8">
+                        <MDBCol size="12" sm="4" className="image-container order-md-2">
+                            <img className="image right" src="https://cdn-image.foodandwine.com/sites/default/files/1501607996/opentable-scenic-restaurants-marine-room-FT-BLOG0818.jpg" />
+                        </MDBCol>
+                        <MDBCol size="12" sm="8" className="order-md-1">
                             <MDBRow className="title text">
                                 <MDBCol>
                                     TELL YOUR STORY
@@ -103,9 +107,6 @@ export class FeatureCardRight extends Component {
                                     he did not like mems very much, bubt one day he encountered a wild wasp.
                                 </MDBCol>
                             </MDBRow>
-                        </MDBCol>
-                        <MDBCol size="12" sm="4" className="image-container">
-                            <img className="image right" src="https://cdn-image.foodandwine.com/sites/default/files/1501607996/opentable-scenic-restaurants-marine-room-FT-BLOG0818.jpg" />
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>

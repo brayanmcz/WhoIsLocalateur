@@ -1,11 +1,15 @@
 import React from "react";
 import { LandingSection } from "./sections/landing";
+import { FeaturesSection } from "./sections/features";
 import Navbar from "./shared/navbar";
-import { FeatureCardLeft, FeatureCardRight } from "./shared/feature-card";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
   overflow-x: hidden !important;
+
+  .seperator {
+    height: 150px;
+  }
 `;
 
 function App() {
@@ -13,10 +17,8 @@ function App() {
     <Wrapper>
       <Navbar />
       <LandingSection />
-      <FeatureCardLeft />
-      <FeatureCardRight />
-      <FeatureCardLeft />
-      <FeatureCardRight />
+      <div className="seperator" />
+      <FeaturesSection />
     </Wrapper>
   );
 }
