@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  @media only screen and (max-width: 767px) {
+    margin-top: -200px;
+  }
+  margin-top: 15px;
   *,
   *:after,
   *:before {
@@ -18,7 +22,7 @@ const Wrapper = styled.div`
     height: 877px;
     width: 423px;
     position: relative;
-    margin: 0 !important;
+    margin: -80px !important;
   }
 
   .iphone-top {
@@ -162,7 +166,7 @@ const Wrapper = styled.div`
 
   .demo-frame {
     height: 100%;
-    width: 105%;
+    width: 101%;
   }
 `;
 
