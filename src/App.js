@@ -4,7 +4,9 @@ import Navbar from "./shared/navbar";
 import { FeatureCardLeft, FeatureCardRight } from "./shared/feature-card";
 import styled from "styled-components";
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  overflow-x: hidden !important;
+`;
 
 function App() {
   return (

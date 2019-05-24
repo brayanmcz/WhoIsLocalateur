@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Iphone } from "../shared/iphone";
-import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -11,13 +11,7 @@ const Wrapper = styled.div`
     height: 100vh;
     width: 100vw;
     margin-top: -40vh;
-    background-image: linear-gradient(
-      10deg,
-      #f4c44a,
-      #f44336,
-      #f44336,
-      #f44336
-    );
+    background-image: linear-gradient(5deg, #f4c44a, #f44336, #f44336, #f44336);
     transform: skewY(-5deg);
     /* z-index: -9; */
   }
@@ -30,7 +24,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 767px) {
     .demo {
-      transform: scale(0.5) !important;
+      transform: scale(0.6) !important;
     }
   }
 
@@ -71,6 +65,11 @@ const Wrapper = styled.div`
   .sub-title {
     font-size: 28px;
     margin-top: -20px;
+    margin-left: 5px;
+  }
+
+  .sub-text {
+    font-size: 14px;
   }
 `;
 
@@ -88,6 +87,22 @@ class LandingSection extends Component {
                 </MDBCol>
                 <MDBCol size="12" className="center text-white sub-title">
                   <span className="">For Business Owners</span>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol size="12" className="center text-white mt-2">
+                  A New, Simple, and Effective way to Maximize your customer
+                  outreach.
+                </MDBCol>
+                <MDBCol size="12" className="center text-white">
+                  Finally, a way to share your story.
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol size="12" className="center mt-3 mb-5">
+                  <MDBBtn color="elegant" size="lg">
+                    SIGN UP FOR FREE
+                  </MDBBtn>
                 </MDBCol>
               </MDBRow>
             </MDBCol>
