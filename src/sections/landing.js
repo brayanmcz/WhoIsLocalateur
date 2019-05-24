@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .text-container {
       margin-top: 100px;
     }

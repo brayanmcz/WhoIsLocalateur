@@ -31,8 +31,8 @@ class Features extends Component {
                 <MDBIcon icon="book" size="3x" className="orange-text" />
                 <h5 className="font-weight-bold my-4">Tutorials</h5>
                 <p className="grey-text mb-md-0 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                  We will provide you with the resources to learn our platform
+                  fast, so you can return to doing what you do best.
                 </p>
               </MDBCol>
               <MDBCol md="4">

@@ -1,7 +1,7 @@
 import React from "react";
 import { LandingSection } from "./sections/landing";
 import Navbar from "./shared/navbar";
-// import { FeatureCardLeft, FeatureCardRight } from "./shared/feature-card";
+import { FeatureCardLeft, FeatureCardRight } from "./shared/feature-card";
 import Features from "./sections/features";
 import styled from "styled-components";
 
@@ -15,8 +15,10 @@ function App() {
       <Navbar />
       <LandingSection />
       <Features />
-      {/* <FeatureCardLeft />
-      <FeatureCardRight /> */}
+      <FeatureCardLeft />
+      <FeatureCardRight />
+      <FeatureCardLeft />
+      <FeatureCardRight />
     </Wrapper>
   );
 }
