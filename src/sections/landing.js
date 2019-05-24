@@ -49,12 +49,31 @@ const Wrapper = styled.div`
     display: inline-block;
     transform: scale(0.8);
     text-align: center;
-    margin: auto;
-    margin-top: 25px;
   }
 
   .center {
     text-align: center;
+  }
+
+  .text-white {
+    color: white;
+  }
+
+  .lobster {
+    font-family: "Lobster Two", cursive;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 70px;
+  }
+
+  .sub-title {
+    font-size: 28px;
+    margin-top: -20px;
   }
 `;
 
@@ -67,8 +86,11 @@ class LandingSection extends Component {
           <MDBRow>
             <MDBCol md="6" className="text-container">
               <MDBRow>
-                <MDBCol size="12" className="center">
-                  Localateur
+                <MDBCol size="12" className="center text-white title">
+                  <span className="lobster"> Localateur</span>
+                </MDBCol>
+                <MDBCol size="12" className="center text-white sub-title">
+                  <span className="">For Business Owners</span>
                 </MDBCol>
               </MDBRow>
             </MDBCol>
