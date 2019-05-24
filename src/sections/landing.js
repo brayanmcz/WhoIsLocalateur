@@ -90,9 +90,12 @@ class LandingSection extends Component {
                 </MDBCol>
               </MDBRow>
               <MDBRow>
-                <MDBCol className="center text-white mt-2">
+                <MDBCol size="12" className="center text-white mt-2">
                   A New, Simple, and Effective way to Maximize your customer
                   outreach.
+                </MDBCol>
+                <MDBCol size="12" className="center text-white">
+                  Finally, a way to share your story.
                 </MDBCol>
               </MDBRow>
               <MDBRow>
