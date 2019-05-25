@@ -287,7 +287,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
-            <img class="img-fluid" src="assets/img/about/img-1.png" alt="" >
+            <img class="img-fluid" src="assets/img/about/reading-list.svg" alt="" >
           </div>
         </div>
       </div>
@@ -676,20 +676,12 @@
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="contact-block">
-                <form name="test" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                    <p class="hidden">
-                      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                    </p>
-                    <p>
-                      <label>Email: <input type="text" name="email" /></label>
-                    </p>
-                    <p>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit">Send</button>
-                    </p>
-                  </form>
+                <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="email" name="email" />
+                    <select name="subject"></select>
+                    <textarea name="message"></textarea>
+                  </form> 
               <form id="contact" name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <div class="row">
