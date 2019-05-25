@@ -11,8 +11,8 @@
 }
 
 .head-section {
-  margin-top: -100px;
-  margin-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .background {
   position: absolute;
@@ -32,6 +32,7 @@
 
   .demo {
     transform: scale(0.6) !important;
+    margin-top: -80px !important;
   }
 }
 
@@ -43,7 +44,6 @@
 
 .foreground {
   margin-top: -40px;
-  height: 100vh;
 }
 
 .demo-container {

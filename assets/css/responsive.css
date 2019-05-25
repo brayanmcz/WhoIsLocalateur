@@ -100,7 +100,7 @@
 /* mobile or only mobile */
 @media (max-width: 767px) {
   .section-padding {
-    padding: 100px 0 60px 0;
+    padding: 0px 0 60px 0;
   }
   .section-title {
     font-size: 22px;
@@ -135,11 +135,16 @@
     line-height: 36px;
     margin-bottom: 15px;
   }
+  #hero-area {
+    padding: 50px 0 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    #hero-area {
+      padding: 160px 0 20px;
+    }
+  }
   #hero-area .contents p {
     font-size: 14px;
-  }
-  #hero-area {
-    padding: 120px 0 80px;
   }
   #hero-area .contents .btn {
     margin: 5px 10px 10px 0px;
